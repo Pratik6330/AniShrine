@@ -1,0 +1,201 @@
+
+/* CSS file for the website */
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+/* Use a dark theme for the website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #222;
+    font-family: 'gg sans', sans-serif;
+  }
+  
+  /* Use a custom font for the logo text */
+  .logo h1 {
+    font-family: 'Righteous', cursive;
+  }
+  
+  /* Style the navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  /* Style the menu icon */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Style the menu items */
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  /* Style the menu links */
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Change the color of the menu links on hover */
+  .menu a:hover {
+    color: #1abc9c;
+  }
+  
+  /* Style the search box and button */
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the search input */
+  .search input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 15px;
+    outline: none;
+  }
+  
+  /* Style the search button */
+  .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #1abc9c;
+    cursor: pointer;
+  }
+  
+  /* Style the search icon */
+  .search i {
+    color: white;
+  }
+  
+  /* Style the main section */
+  .main {
+    padding: 40px 20px;
+  }
+  
+  /* Style the container for each row */
+  .container {
+    margin-bottom: 40px;
+  }
+  
+  /* Style the heading for each row */
+  .container h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  
+  /* Style the row for the posters */
+  .row {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide the scrollbar for the row */
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Style the column for each poster */
+  .col {
+    min-width: 200px;
+    height: 300px;
+    margin-right: 20px;
+  }
+  
+  /* Style the poster */
+  .poster {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .fas{
+    background: transparent;
+  }
+  
+  /* Style the poster image */
+  .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Style the poster title */
+  .poster .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* CSS file for the website (continued) */
+
+/* Style the buttons for sliding the posters */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the buttons */
+  .buttons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #1abc9c;
+    cursor: pointer;
+  }
+  
+  /* Style the button icons */
+  .buttons i {
+    color: white;
+  }
+  
+  /* Use media queries to make the website responsive */
+  @media screen and (max-width: 768px) {
+    /* Hide the menu items and show the menu icon */
+    .menu {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    /* Reduce the width of the search input */
+    .search input {
+      width: 150px;
+    }
+  
+    /* Reduce the size of the poster title */
+    .poster .title {
+      font-size: 14px;
+    }
+  }
+  

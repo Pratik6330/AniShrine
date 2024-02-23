@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniShrine - Watch Anime Online</title>
+  <!-- Link to Google Fonts and Font Awesome -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar with a side menu -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#"><h1>AniShrine</h1></a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Genres</a></li>
+      <li><a href="#">Seasons</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">OVA</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search anime...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+  <!-- Main section with anime posters -->
+  <main class="main">
+    <div class="container">
+      <h2>Recommended</h2>
+      <div class="row" id="row1">
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Attack on Titan">
+            <div class="title">Attack on Titan</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Demon Slayer">
+            <div class="title">Demon Slayer</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Jujutsu Kaisen">
+            <div class="title">Jujutsu Kaisen</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="My Hero Academia">
+            <div class="title">My Hero Academia</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="One Piece">
+            <div class="title">One Piece</div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev1" onclick="slideLeft('row1')"><i class="fas fa-angle-left"></i></button>
+        <button id="next1" onclick="slideRight('row1')"><i class="fas fa-angle-right"></i></button>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Latest</h2>
+      <div class="row" id="row2">
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Bleach">
+            <div class="title">Bleach</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Dr. Stone">
+            <div class="title">Dr. Stone</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Fire Force">
+            <div class="title">Fire Force</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Naruto">
+            <div class="title">Naruto</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="poster">
+            <img src="https://i.pinimg.com/564x/35/35/43/3535436021a9fd25827413e227d5ba64.jpg" alt="Tokyo Revengers">
+            <div class="title">Tokyo Revengers</div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev2" onclick="slideLeft('row2')"><i class="fas fa-angle-left"></i></button>
+        <button id="next2" onclick="slideRight('row2')"><i class="fas fa-angle-right"></i></button>
+      </div>
+    </div>
+  </main>
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
